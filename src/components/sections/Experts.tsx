@@ -20,13 +20,13 @@ export function Experts() {
           className="pop-in abs absolute top-[70px] left-[38%] hidden lg:block h-[80px] w-[62px] -rotate-[9.4deg] overflow-hidden rounded-[10px] bg-teal lg:h-auto lg:w-auto"
           style={{ ...at(568, 194.99, 92, 119, -9.4), transformOrigin: "50% 50%" } as CSSProperties}
         >
-          <Pic src="/img/avatar-igor.png" alt="Igor Zarębski" sizes="482px" className="abs absolute inset-0 lg:inset-auto" style={at(-176.5, -35.6, 482, 271, 9.4)} />
+          <Pic src="/img/avatar-igor.webp" alt="Igor Zarębski" sizes="482px" className="abs absolute inset-0 lg:inset-auto" style={at(-176.5, -35.6, 482, 271, 9.4)} />
         </div>
         <div
           className="pop-in abs absolute -top-6 right-[18%] hidden lg:block h-[80px] w-[62px] rotate-[15deg] overflow-hidden rounded-[10px] bg-sun lg:h-auto lg:w-auto"
           style={{ ...at(831.83, 71.88, 92, 119, 15), transformOrigin: "50% 50%" } as CSSProperties}
         >
-          <Pic src="/img/avatar-michal.png" alt="Michał Iwaniuk" sizes="141px" className="abs absolute inset-0 lg:inset-auto" style={at(-24, -2.9, 141, 210)} />
+          <Pic src="/img/avatar-michal.webp" alt="Michał Iwaniuk" sizes="141px" className="abs absolute inset-0 lg:inset-auto" style={at(-24, -2.9, 141, 210)} />
         </div>
       </div>
 

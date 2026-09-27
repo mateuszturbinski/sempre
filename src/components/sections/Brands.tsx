@@ -19,11 +19,11 @@ type Brand = {
 };
 
 const BRANDS: Brand[] = [
-  { name: "Babbi", tagline: "Składniki do lodów", bg: "#f2a8b2", img: "/img/brand-babbi.png", image: [8.5, 210, 352, 529] },
-  { name: "Pernigotti", tagline: "Lody i desery", bg: "#f1caa3", img: "/img/brand-pernigotti.png", image: [-21.5, 284, 406, 346] },
-  { name: "Lübecker", tagline: "produkty czekoladowe", bg: "#f2b7a8", img: "/img/brand-lubecker.png", image: [16.5, 251, 336, 336] },
-  { name: "Trucillo", tagline: "Włoska kawa", bg: "#b4d0bf", img: "/img/brand-trucillo.png", image: [-22.2, 194, 433.3, 325] },
-  { name: "Mazzoni", tagline: "Przeciery", bg: "#efd39b", img: "/img/brand-mazzoni.png", image: [-32.5, 219, 434.9, 385] },
+  { name: "Babbi", tagline: "Składniki do lodów", bg: "#f2a8b2", img: "/img/brand-babbi.webp", image: [8.5, 210, 352, 529] },
+  { name: "Pernigotti", tagline: "Lody i desery", bg: "#f1caa3", img: "/img/brand-pernigotti.webp", image: [-21.5, 284, 406, 346] },
+  { name: "Lübecker", tagline: "produkty czekoladowe", bg: "#f2b7a8", img: "/img/brand-lubecker.webp", image: [16.5, 251, 336, 336] },
+  { name: "Trucillo", tagline: "Włoska kawa", bg: "#b4d0bf", img: "/img/brand-trucillo.webp", image: [-22.2, 194, 433.3, 325] },
+  { name: "Mazzoni", tagline: "Przeciery", bg: "#efd39b", img: "/img/brand-mazzoni.webp", image: [-32.5, 219, 434.9, 385] },
 ];
 
 const ROW_X = -257; // rząd z Figmy: gradient (1445 w rzędzie) ląduje na x=1188 płótna, strzałka na 1334

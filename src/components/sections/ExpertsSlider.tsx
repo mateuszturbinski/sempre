@@ -32,7 +32,7 @@ const EXPERTS: Expert[] = [
     name: "Igor Zarębski",
     role: "Szef Akademii Sempre",
     body: "Dzieli się wiedzą i praktycznym doświadczeniem, wspierając rozwój umiejętności uczestników szkoleń Akademii Sempre.",
-    img: "/img/expert-igor-v2.jpg",
+    img: "/img/expert-igor-v2.webp",
     alt: "Igor Zarębski prowadzi warsztat w Akademii Sempre",
     rect: [-15, -51, 1770, 996],
     textX: 56,
@@ -45,7 +45,7 @@ const EXPERTS: Expert[] = [
     name: "Michał Iwaniuk",
     role: "Ekspert Akademii Sempre",
     body: "Dzieli się doświadczeniem i pokazuje, jak wykorzystać wiedzę w praktyce. Inspiruje uczestników szkoleń do rozwijania umiejętności i poszukiwania nowych pomysłów.",
-    img: "/img/expert-michal.png",
+    img: "/img/expert-michal.webp",
     alt: "Michał Iwaniuk przy ladzie z lodami",
     rect: [-20, -25, 1517, 853],
     textX: 51,
@@ -167,7 +167,7 @@ export function ExpertsSlider() {
                 {e.body}
               </p>
               <Pic
-                src="/img/expert-badges.png"
+                src="/img/expert-badges.webp"
                 alt="Finalista Pucharu Sztuki Deserowej 2025, Laureat wyróżnienia Kreator Smaku 2024, Prowadzący warsztaty"
                 fit="fill"
                 sizes="313px"

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
+import { asset } from "./canvas";
 
 /**
  * Lód w hero obracający się o 360° wraz ze scrollem (sekwencja klatek na <canvas>).
@@ -13,7 +14,7 @@ import type { CSSProperties } from "react";
  */
 type Manifest = { count: number; width: number; height: number; ext: string };
 
-const FRAMES_DIR = "/cone-v3";
+const FRAMES_DIR = asset("/cone-v3");
 
 /** Ile px scrolla (w skali płótna 1440) przypada na pełny obrót. */
 const SPIN_RANGE = 1100;
@@ -37,7 +38,9 @@ export function ConeSpin({ className, style }: { className: string; style: CSSPr
       const scale = innerWidth >= 1024 ? z : innerWidth / 1440;
       const p = (window.scrollY / (SPIN_RANGE * scale)) % 1;
       // Najbliższa już wczytana klatka (podczas doładowywania obrót jest po prostu rzadszy).
+      if (!Number.isFinite(p)) return;
       let idx = Math.round(p * frames.length) % frames.length;
+      if (!frames[idx]) return;
       for (let k = 0; k < frames.length && !frames[idx].complete; k++) idx = (idx + frames.length - 1) % frames.length;
       if (idx === last || !frames[idx].complete) return;
       last = idx;

@@ -28,7 +28,7 @@ const STAGES: Stage[] = [
   {
     title: "Otwieram lodziarnię",
     body: "Od pomysłu i lokalu po pierwszą gałkę. Pomożemy zaplanować start krok po kroku.",
-    img: "/img/stage-open.jpg",
+    img: "/img/stage-open.webp",
     alt: "Otwarcie lodziarni",
     x: 100,
     image: [-225, -67, 836, 627],
@@ -36,7 +36,7 @@ const STAGES: Stage[] = [
   {
     title: "Rozwijam lodziarnię",
     body: "Nowe smaki, szkolenia zespołu czy kolejny lokal? Dopasujemy wsparcie do Twojego następnego kroku.",
-    img: "/img/stage-grow-v2.jpg",
+    img: "/img/stage-grow-v2.webp",
     alt: "Rozwój lodziarni",
     x: 527,
     image: [-173, -244, 810, 608],
@@ -45,7 +45,7 @@ const STAGES: Stage[] = [
   {
     title: "Prowadzę lokal HoReCa",
     body: "Desery, kawa i lody w karcie Twojego lokalu. Dobierzemy produkty i przeszkolimy zespół.",
-    img: "/img/stage-horeca-v2.png",
+    img: "/img/stage-horeca-v2.webp",
     alt: "Lokal HoReCa",
     x: 953,
     image: [-96, -115, 965, 644],

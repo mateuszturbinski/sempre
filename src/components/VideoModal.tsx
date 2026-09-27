@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { asset } from "./canvas";
 
 /**
  * Wspólny modal wideo. Otwiera się zdarzeniem `sempre:video` (openVideo()) — z hero i z sekcji wideo.
  * Plik: public/video/sempre.mp4 (do dostarczenia). Bez pliku modal pokazuje komunikat zastępczy.
  */
-export const VIDEO_SRC = "/video/sempre.mp4";
+export const VIDEO_SRC = asset("/video/sempre.mp4");
 const EVENT = "sempre:video";
 
 export function openVideo() {
@@ -61,7 +62,7 @@ export function VideoModal() {
             controls
             playsInline
             preload="none"
-            poster="/img/photo-team.png"
+            poster={asset("/img/photo-team.webp")}
             onError={() => setFailed(true)}
             className="size-full object-cover"
           />

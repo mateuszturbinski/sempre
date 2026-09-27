@@ -36,7 +36,7 @@ export function Hero() {
   return (
     <Canvas height="var(--hh)" className="overflow-clip bg-peach" inner="hero-canvas flex min-h-[100svh] flex-col px-5 pt-5">
       <Pic
-        src="/img/logo-sempre.png"
+        src="/img/logo-sempre.webp"
         alt="Sempre"
         fit="cover"
         sizes="136px"
@@ -75,7 +75,7 @@ export function Hero() {
         className="abs group hidden overflow-hidden rounded-[20px] bg-brand-deep lg:block"
         style={edge(fromRight(1148), low(642), 192, 108)}
       >
-        <Pic src="/img/photo-meeting.png" sizes="204px" className="abs" style={at(-6, -14, 204, 136)} />
+        <Pic src="/img/photo-meeting.webp" sizes="204px" className="abs" style={at(-6, -14, 204, 136)} />
         {/* Rectangle 13: biel 20% + efekt GLASS (Figma 70:2507) */}
         <LiquidGlass className="abs" style={at(0, 0, 192, 108)} radius={20} strength={12} edge={0.18} />
         <span

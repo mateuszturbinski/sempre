@@ -37,18 +37,18 @@ const STORIES: Story[] = [
       </>
     ),
     cta: "Poznaj historię Haliny",
-    photo: { src: "/img/photo-meeting.png", alt: "Halina podczas rozmowy z doradcą" },
+    photo: { src: "/img/photo-meeting.webp", alt: "Halina podczas rozmowy z doradcą" },
   },
   {
     title: ["Nowy rozdział", "w ofercie lokalu."],
     body: "Historia współpracy przy doborze produktów i wsparciu rozwoju oferty gastronomicznej.",
-    photo: { src: "/img/stage-horeca-v2.png", alt: "Nowe desery w karcie lokalu" },
+    photo: { src: "/img/stage-horeca-v2.webp", alt: "Nowe desery w karcie lokalu" },
   },
   {
     title: ["Więcej pewności", "w codziennej pracy."],
     body: "Historia szkolenia dopasowanego do potrzeb pracowników i pracy w ich własnym lokalu.",
     cta: "Poznaj historię",
-    photo: { src: "/img/process-training.png", alt: "Szkolenie zespołu w lokalu" },
+    photo: { src: "/img/process-training.webp", alt: "Szkolenie zespołu w lokalu" },
   },
 ];
 

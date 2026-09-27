@@ -13,6 +13,12 @@ export function at(x: number, y: number, w?: number, h?: number, r?: number): CS
   return s as CSSProperties;
 }
 
+/**
+ * Ścieżka do pliku z /public z uwzględnieniem basePath (GitHub Pages serwuje stronę pod /sempre/).
+ * Przy statycznym eksporcie next/image (unoptimized) i zwykłe URL-e nie dostają basePath automatycznie.
+ */
+export const asset = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+
 /** Lewa krawędź okna w układzie płótna (płótno 1440 jest wyśrodkowane). */
 export const BLEED_X = "calc(720px - var(--vw) / 2)";
 
@@ -71,7 +77,7 @@ export function Pic({ src, alt = "", className = "", style, fit = "cover", sizes
   const fitClass = fit === "cover" ? "object-cover" : fit === "contain" ? "object-contain" : "object-fill";
   return (
     <div className={`${/\babsolute\b/.test(className) ? "" : "relative "}${className}`} style={style}>
-      <Image src={src} alt={alt} fill sizes={sizes} preload={preload} className={fitClass} />
+      <Image src={asset(src)} alt={alt} fill sizes={sizes} preload={preload} className={fitClass} />
     </div>
   );
 }
@@ -85,7 +91,7 @@ export function Wave({ src, y, h }: { src: string; y: number; h: number }) {
     <div
       aria-hidden
       className="pointer-events-none absolute left-1/2 hidden -translate-x-1/2 bg-size-[100%_100%] lg:block"
-      style={{ top: y, height: h, width: "max(1518px, calc(100vw + 80px))", backgroundImage: `url(${src})` }}
+      style={{ top: y, height: h, width: "max(1518px, calc(100vw + 80px))", backgroundImage: `url(${asset(src)})` }}
     />
   );
 }

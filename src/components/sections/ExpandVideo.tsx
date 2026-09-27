@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { asset } from "../canvas";
 import { Play } from "../icons";
 import { openVideo } from "../VideoModal";
 
@@ -102,7 +103,7 @@ export function ExpandVideo() {
         <div ref={box} className="pointer-events-auto absolute overflow-hidden bg-[#c2c2c2] will-change-[width,height,left,top]">
           <div ref={img} className="absolute inset-0 [&_img]:object-[inherit]" style={{ objectPosition: "50% 4%" }}>
             <Image
-              src="/img/photo-team.png"
+              src={asset("/img/photo-team.webp")}
               alt="Zespół lodziarni przy pracy"
               fill
               sizes="100vw"
@@ -123,7 +124,7 @@ export function ExpandVideo() {
           </button>
         </div>
         <div ref={berry} aria-hidden className="absolute">
-          <Image src="/img/raspberry-deco.png" alt="" fill sizes="151px" className="object-fill" />
+          <Image src={asset("/img/raspberry-deco.webp")} alt="" fill sizes="151px" className="object-fill" />
         </div>
       </div>
     </section>

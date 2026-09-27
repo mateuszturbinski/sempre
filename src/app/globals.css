@@ -5,6 +5,8 @@
  * Font treści w Figmie to "Jokker" (komercyjny). Jeśli wrzucisz licencjonowane pliki do
  * public/fonts (Jokker-Regular/Medium/Semibold.woff2), @font-face poniżej przejmie render.
  */
+/* @font-face „Jokker” — odkomentuj po dodaniu licencjonowanych plików do public/fonts/
+   (Jokker-Regular/Medium/Semibold.woff2). Do tego czasu treść używa zamiennika Figtree.
 @font-face {
   font-family: "Jokker";
   src: url("/fonts/Jokker-Regular.woff2") format("woff2");
@@ -23,6 +25,7 @@
   font-weight: 600;
   font-display: swap;
 }
+*/
 
 @theme inline {
   --color-cream: #fcf9f2;

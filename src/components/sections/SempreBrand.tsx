@@ -52,7 +52,7 @@ const ACCENT = "#f4495d";
 // Figma 50:935 (Sempre), 92:2714 (Cukieteria), 92:2776 (Warsaw Academy).
 const TABS: Tab[] = [
   {
-    logo: { src: "/img/logo-sempre.png", alt: "Sempre", y: 22, w: 120, h: 62, fit: "cover" },
+    logo: { src: "/img/logo-sempre.webp", alt: "Sempre", y: 22, w: 120, h: 62, fit: "cover" },
     label: "Marka główna",
     title: ["Twój pomysł", "Nasza energia"],
     body: [
@@ -62,7 +62,7 @@ const TABS: Tab[] = [
     ],
     textY: 207,
     tiles: [
-      { kind: "photo", pos: [0, 0, 400, 312], src: "/img/photo-meeting.png", alt: "Rozmowa przy kawie", rect: [-69, -9, 553, 369] },
+      { kind: "photo", pos: [0, 0, 400, 312], src: "/img/photo-meeting.webp", alt: "Rozmowa przy kawie", rect: [-69, -9, 553, 369] },
       { kind: "empty", pos: [410, 0, 177, 312] },
       { kind: "empty", pos: [0, 322, 221, 312] },
       {
@@ -78,7 +78,7 @@ const TABS: Tab[] = [
     ],
   },
   {
-    logo: { src: "/img/logo-cukieteria-pl.png", alt: "Cukieteria.pl", y: 36, w: 186, h: 46 },
+    logo: { src: "/img/logo-cukieteria-pl.webp", alt: "Cukieteria.pl", y: 36, w: 186, h: 46 },
     label: "Sklep online",
     title: ["Twój pomysł", "Dobre składniki"],
     body: [
@@ -90,7 +90,7 @@ const TABS: Tab[] = [
     cta: { label: "Zobacz możliwości", href: "#" },
     tiles: [
       { kind: "empty", pos: [0, 0, 177, 312] },
-      { kind: "photo", pos: [187, 0, 400, 312], src: "/img/tab-callebaut.png", alt: "Czekolada Callebaut 823", rect: [66, 33, 268, 246] },
+      { kind: "photo", pos: [187, 0, 400, 312], src: "/img/tab-callebaut.webp", alt: "Czekolada Callebaut 823", rect: [66, 33, 268, 246] },
       {
         kind: "quote",
         pos: [0, 322, 356, 312],
@@ -105,7 +105,7 @@ const TABS: Tab[] = [
     ],
   },
   {
-    logo: { src: "/img/logo-wapa.png", alt: "Warsaw Academy of Pastry Arts", y: 28, w: 117, h: 65 },
+    logo: { src: "/img/logo-wapa.webp", alt: "Warsaw Academy of Pastry Arts", y: 28, w: 117, h: 65 },
     label: "Akademia i szkolenia",
     title: ["Twoja pasja", "Praktyczna wiedza"],
     body: [
@@ -127,8 +127,8 @@ const TABS: Tab[] = [
           [400, "\u2028Rozwijaj umiejętności\u2028pod okiem ekspertów.\u2028Poznawaj składniki,\u2028testuj nowe połączenia."],
         ],
       },
-      { kind: "photo", pos: [365, 0, 222, 312], src: "/img/tab-michal.png", alt: "Michał Iwaniuk", rect: [-18, 0, 258, 323] },
-      { kind: "photo", pos: [0, 322, 222, 312], src: "/img/tab-igor.png", alt: "Igor Zarębski", rect: [-20, 0, 258, 327] },
+      { kind: "photo", pos: [365, 0, 222, 312], src: "/img/tab-michal.webp", alt: "Michał Iwaniuk", rect: [-18, 0, 258, 323] },
+      { kind: "photo", pos: [0, 322, 222, 312], src: "/img/tab-igor.webp", alt: "Igor Zarębski", rect: [-20, 0, 258, 327] },
       {
         kind: "quote",
         pos: [232, 322, 355, 312],

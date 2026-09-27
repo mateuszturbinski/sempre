@@ -22,7 +22,7 @@ export function Clients() {
       >
         {LOGOS.map((name, i) => (
           <li key={name} className="shrink-0">
-            <Pic src={`/img/client-${i + 1}.png`} alt={name} sizes="89px" className="size-[72px] lg:size-[89px]" />
+            <Pic src={`/img/client-${i + 1}.webp`} alt={name} sizes="89px" className="size-[72px] lg:size-[89px]" />
           </li>
         ))}
       </ul>
